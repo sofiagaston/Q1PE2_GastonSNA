@@ -1,0 +1,115 @@
+import java.util.Scanner;
+class HelloWorld {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Please input a number");
+        String binary = sc.nextLine();
+
+        int size = binary.length();
+        int times = 1;
+        for (int i = size -1 ; i>=0 ; i--){
+            int index = size -1 -i;
+            int val = binary.charAt(index) - '0';
+            int finalval = 0;
+            finalval = finalval + (val * times);
+            times = times*2;
+            System.out.print(finalval);
+            int num = finalval;
+        }
+        if (num >= 20|| num<=10){
+            int tens = num/10;
+
+                if (tens==1){
+                    System.out.print("ten");
+                }
+                else if (tens==2){
+                    System.out.print("twenty");
+                }
+                else if (tens==3){
+                    System.out.print("thirty");
+                }
+                else if (tens==4){
+                    System.out.print("forty");
+                }
+                else if (tens==5){
+                    System.out.print("fifty");
+                }
+                else if (tens==6){
+                    System.out.print("sixty");
+                }
+                else if (tens==7){
+                    System.out.print("seventy");
+                }
+                else if (tens==8){
+                    System.out.print("eighty");
+                }
+                else if (tens==9){
+                    System.out.print("ninety");
+                }
+                
+            int ones = num%10;
+                if (ones==1){
+                    System.out.print(" one");
+                }
+                else if (ones==2){
+                    System.out.print(" two");
+                }
+                else if (ones==3){
+                    System.out.print(" three");
+                }
+                else if (ones==4){
+                    System.out.print(" four");
+                }
+                else if (ones==5){
+                    System.out.print(" five");
+                }
+                else if (ones==6){
+                    System.out.print(" six");
+                }
+                else if (ones==7){
+                    System.out.print(" seven");
+                }
+                else if (ones==8){
+                    System.out.print(" eight");
+                }
+                else if (ones==9){
+                    System.out.print(" nine");
+                }
+        }
+        
+        if(num==0){
+            System.out.print("zero");
+        }
+        
+        else{
+            int teens = num%10;
+                if (teens==1){
+                    System.out.print(" eleven");
+                }
+                else if (teens==2){
+                    System.out.print(" twelve");
+                }
+                else if (teens==3){
+                    System.out.print(" thirteen");
+                }
+                else if (teens==4){
+                    System.out.print(" fourteen");
+                }
+                else if (teens==5){
+                    System.out.print(" fifteen");
+                }
+                else if (teens==6){
+                    System.out.print(" sixteen");
+                }
+                else if (teens==7){
+                    System.out.print(" seventeen");
+                }
+                else if (teens==8){
+                    System.out.print(" eighteen");
+                }
+                else if (teens==9){
+                    System.out.print(" nineteen");
+                }
+        }
+    }
+}
